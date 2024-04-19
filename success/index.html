@@ -1,0 +1,10 @@
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    document.body.innerHTML = `Enter the following command:\n
+    /spotify auth ${code}`
+</script>
+
+<body>
+    Loading token...
+</body>
