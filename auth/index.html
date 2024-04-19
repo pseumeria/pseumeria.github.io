@@ -1,12 +1,12 @@
+<body>
+    Redirecting you to Spotify...
+</body>
+
 <script>
     const url = `https://accounts.spotify.com/authorize?
 response_type=code
 &client_id=88d7ed5889e14101b1db1f653ae7a485
 &scope=playlist-read-private playlist-modify-private user-library-read
-&redirect_uri=http://www.pseumeria.xyz/success`;
+&redirect_uri=http://www.pseumeria.xyz/callback`;
     window.location.replace(url);
 </script>
-
-<body>
-    Redirecting you to Spotify...
-</body>
