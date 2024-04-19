@@ -1,10 +1,18 @@
+<link rel="stylesheet" href="https://unpkg.com/some-nice-basic-css/global.css" />
+
 <body>
-    Loading token...
+    <div class="wrapper">
+        <article class="[ post ] [ flow ]">
+            <h1>Tsu Spotify</h1>
+            <p>Use the following command to authenticate your tsu account:</p>
+            <p><code id=token>Token goes here...</code></p>
+        </article>
+    </div>
 </body>
 
 <script>
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
-    document.body.innerHTML = `Enter the following command:\n
-    /spotify auth ${code}`
+    var ele = document.getElementById("token");
+    ele.innerHTML = `/spotify auth token:${code}`
 </script>
